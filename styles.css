@@ -1,1 +1,141 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #00d084;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.product__photo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photo-container {
+  flex: 1;
+  min-width: 300px;
+  background: linear-gradient(150deg, #a8eb12, #b3ff61);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photo-main img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.photo-album ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.photo-album ul li img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.photo-album ul li img:hover {
+  transform: scale(1.1);
+}
+
+.product-details {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.code {
+  font-size: 14px;
+  color: gray;
+  margin: 5px 0 20px;
+}
+
+.price {
+  font-size: 28px;
+  color: #e63946;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.price span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.variant h4, .description h4 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.variant ul {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.variant ul li img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.description ul {
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+.description ul li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+  list-style-type: disc;
+}
+
+.add-to-cart {
+  background-color: #e63946;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.add-to-cart:hover {
+  background-color: #d62828;
+}
